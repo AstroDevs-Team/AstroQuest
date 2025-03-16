@@ -1,0 +1,53 @@
+{
+    "name": "astroquest",
+    "displayName": "AstroQuest",
+    "description": "A VS Code extension that generates random project ideas.",
+    "version": "0.0.1",
+    "publisher": "astrodevs",
+    "engines": {
+        "vscode": "^1.98.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "keywords": [
+        "projects",
+        "ideas",
+        "random",
+        "development",
+        "CLI"
+    ],
+    "activationEvents": [
+        "onCommand:astroQuest.getProjectIdea"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "astroQuest.getProjectIdea",
+                "title": "Get a Random Project Idea"
+            }
+        ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/AstroDevs-Team/AstroQuest"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.7",
+        "@types/node": "20.x",
+        "@types/vscode": "^1.98.0",
+        "@vscode/test-cli": "^0.0.9",
+        "@vscode/test-electron": "^2.4.0",
+        "eslint": "^8.57.0",
+        "typescript": "^5.4.5"
+    },
+    "dependencies": {
+        "sqlite3": "^5.1.7"
+    }
+}
