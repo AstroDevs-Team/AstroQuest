@@ -6,7 +6,7 @@ let db;
 
 // Open SQLite database
 try {
-    const dbPath = path.resolve(__dirname, 'projects.db');
+    const dbPath = path.join(__dirname, 'projects.db');
     db = new sqlite3.Database(dbPath, (err) => {
         if (err) {
             console.error("🚨 Error opening database:", err.message);

@@ -2,8 +2,8 @@
     "name": "astroquest",
     "displayName": "AstroQuest",
     "description": "A VS Code extension that generates random project ideas.",
-    "version": "0.1.0",
-    "publisher": "astrodevs",  
+    "version": "0.1.2",
+    "publisher": "astrodevs",
     "icon": "images/logo.png",
     "engines": {
         "vscode": "^1.98.0"
@@ -31,8 +31,8 @@
         ]
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/AstroDevs-Team/AstroQuest"
+        "type": "git",
+        "url": "https://github.com/AstroDevs-Team/AstroQuest"
     },
     "scripts": {
         "lint": "eslint .",
